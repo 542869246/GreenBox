@@ -15,7 +15,6 @@ fi
 for i in $(seq 1 $1)
 do 
    time=`date +'%G-%m-%d %H:%M:%S' -d '-1 days'`
-   echo '$time'   
    timedatectl set-time "$time"
    /bin/bash ./init.sh
 done
